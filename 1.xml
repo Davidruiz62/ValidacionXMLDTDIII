@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: David Ruiz
+Curso: Daw1
+Fecha: 02/04/2025-->
+
+<!--Ejercicios de cuentos, un cuento en cada documento-->
+
+<!--Documento DTD-->
+<!DOCTYPE cuentos [
+    <!ELEMENT cuento (personajes, trama, etiqueta*, precio?)>
+    <!ATTLIST cuento cod CDATA #REQUIRED>
+    <!ATTLIST cuento titulo CDATA #REQUIRED>
+    <!ATTLIST cuento genero (infantil|fantasía|terror) #IMPLIED>
+    <!ELEMENT personajes (personaje+)>
+    <!ELEMENT personaje (nombre, genero, (descripcion | descripcion_fisica | imagen | url)?)>
+    <!ATTLIST personaje id CDATA #REQUIRED>
+    <!ATTLIST personaje tipo (principal|secundario|antagonista) "principal">
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT descripcion_fisica (#PCDATA)>
+    <!ELEMENT imagen (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+    <!ELEMENT trama (#PCDATA)>
+    <!ELEMENT etiqueta EMPTY>
+    <!ATTLIST etiqueta nombre CDATA #REQUIRED>
+    <!ELEMENT precio (#PCDATA)>
+    <!ATTLIST precio moneda CDATA "eur">
+]>
+
+<!--Cuento 1-->
+<cuento cod="A01" titulo="El bosque encantado" genero="fantasía">
+    <personajes>
+        <personaje id="P1" tipo="principal">
+            <nombre>Ana</nombre>
+            <genero>F</genero>
+            <descripcion>Una joven valiente que explora el bosque.</descripcion>
+        </personaje>
+        <personaje id="P2" tipo="antagonista">
+            <nombre>El Brujo Oscuro</nombre>
+            <genero>M</genero>
+            <descripcion>Un hechicero malvado que protege un tesoro.</descripcion>
+        </personaje>
+    </personajes>
+    <trama>Ana se adentra en un bosque misterioso y enfrenta desafíos mágicos.</trama>
+    <etiqueta nombre="aventura"/>
+    <etiqueta nombre="magia"/>
+    <precio moneda="usd">12.99</precio>
+</cuento>

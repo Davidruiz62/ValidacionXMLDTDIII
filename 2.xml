@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: David Ruiz
+Curso: Daw1
+Fecha: 02/04/2025-->
+
+<!--Cuento 2-->
+<!DOCTYPE cuento SYSTEM "cuento.dtd">
+<cuento cod="B02" titulo="La casa del misterio" genero="terror">
+    <personajes>
+        <personaje id="P3" tipo="principal">
+            <nombre>Pedro</nombre>
+            <genero>M</genero>
+            <descripcion_fisica>Alto y delgado, con ojos penetrantes.</descripcion_fisica>
+        </personaje>
+        <personaje id="P4" tipo="secundario">
+            <nombre>Laura</nombre>
+            <genero>F</genero>
+            <descripcion>Hermana de Pedro, valiente y curiosa.</descripcion>
+        </personaje>
+    </personajes>
+    <trama>Pedro y Laura descubren secretos ocultos en una casa abandonada.</trama>
+    <etiqueta nombre="misterio"/>
+    <etiqueta nombre="suspenso"/>
+    <precio>9.50</precio>
+</cuento>
